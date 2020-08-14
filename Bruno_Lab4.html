@@ -1,0 +1,50 @@
+<!-- 
+    Name: Bruno Surdi Oliveira
+    Date: July 2020
+    Purpose: Lab 4
+-->
+
+<html>
+	<head>
+		<title>Lab #4</title>
+		<script language="JavaScript" type="text/JavaScript" src="Bruno_Lab4.js">
+		</script>
+	</head>
+	<body>
+		<div>First Name</div>
+		<input type="text" id="txtFirst" maxlength="50" size="50" />
+		<br /><br />
+		<div>Last Name</div>
+		<input type="text" id="txtLast" maxlength="50" size="50" />
+		<br /><br />
+		<div>Address</div>
+		<input type="text" id="txtAddress" maxlength="50" size="50" />
+		<br /><br />
+		<div>City</div>
+		<input type="text" id="txtCity" maxlength="40" size="40" />
+		<br /><br />
+		<div>Province</div>
+		<select id="selProvinces" onchange="testMemberProvince();">
+			<option >British Columbia</option>
+	  		<option >Alberta</option>
+	  		<option >Saskatchewan</option>
+	  		<option >Manitoba</option>
+			<option >Ontario</option>
+			<option >Quebec</option>
+			<option >Nova Scotia</option>
+			<option >Prince Edward Island</option>
+			<option >Newfoundland & Labrador</option>
+			<option >Northwest Territories</option>
+		</select>
+		<br /><br />
+		<div>Postal Code</div>
+		<input type="text" id="txtPostal" maxlength="7" size="7" />
+		<br /><br />
+		<div>Telephone</div>
+		<input type="text" id="txtPhone" maxlength="12" size="12" />
+		<br /><br />
+		<label><input type="checkbox" id="chkMember" onclick="testMemberProvince();" />Is Member?</label><br />
+		<br /><br />
+		<input type="button" id="btnSubmit"  value="Submit" onclick="submit();"/>
+	</body>
+</html>
